@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Trainer</title>
+
+  <!-- Open Sans is the face the real page uses for breadcrumbs, titles and the student name.
+       Offline, those fall back to Arial and everything else still works. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+
+  <!-- Styles: shared basics, then the BannerWeb replica, then the trainer overlays on top of it. -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/trainer.css">
+</head>
+<body>
+  <!-- Everything is drawn into #app by js/views/*.js -->
+  <div id="app"></div>
+
+  <!-- Plain scripts (not ES modules) so the page also works when opened straight from disk.
+       Order matters: each file uses names declared by the files above it. -->
+  <script src="js/config.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/registration.js"></script>
+  <script src="js/hints.js"></script>
+  <script src="js/views/shell.js"></script>
+  <script src="js/views/screens.js"></script>
+  <script src="js/views/register.js"></script>
+  <script src="js/views/plan-ahead.js"></script>
+  <script src="js/views/dialogs.js"></script>
+  <script src="js/views/trainer.js"></script>
+  <script src="js/actions.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
